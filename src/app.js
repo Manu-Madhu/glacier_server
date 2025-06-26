@@ -50,7 +50,8 @@ app.get("/", (req, res) => {
   );
 });
 
-app.use("/api/auth", authRouter)
+app.use("/api/auth", authRouter);
+
 
 app.use((req, res) => {
   res.status(404).json({
