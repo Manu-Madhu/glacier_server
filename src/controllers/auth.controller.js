@@ -1,13 +1,18 @@
+import { getUserByEmail } from "../services/user.service.js";
+import { generateAccessToken, generateRefreshToken } from "../utils/jwt.util.js";
+import { comparePasswords } from "../utils/password.util.js";
+import { validateEmail } from "../utils/validate.util.js";
+
 export const userLogin = async (req, res) => {
     const { email, password } = req.body;
 
     try {
         let user;
-        // if (validateEmail(email)) {
-        //     const emailCaseRegex = new RegExp(email, 'i')
+        if (validateEmail(email)) {
+            const emailCaseRegex = new RegExp(email, 'i')
 
-        //     user = await getUserByEmail(emailCaseRegex)
-        // }
+            user = await getUserByEmail(emailCaseRegex)
+        }
 
         if (user) {
             if (user?.isBlocked) {
