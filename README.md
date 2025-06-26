@@ -1,6 +1,6 @@
-# 👜 Tessuto Creations – E-Commerce Leather Store
+# 👜 Glacier Creations – E-Commerce Store
 
-**Tessuto Creations** is a premium leather e-commerce platform designed to showcase and sell high-quality leather products online. Built with a modern React/Next.js stack, this platform delivers a rich user experience for browsing, filtering, and purchasing handcrafted leather items.
+**Glacier Creations** is a premium e-commerce platform designed to showcase and sell high-quality leather products online. Built with a modern React/Next.js stack, this platform delivers a rich user experience for browsing, filtering, and purchasing handcrafted leather items.
 
 ---
 
